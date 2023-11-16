@@ -9,9 +9,9 @@
     <script src="index.js" defer></script>
     <title>토스 기술 블로그, 토스 테크</title>
   </head>
-  <body class="w-screen h-auto relative">
+  <body class="relative w-screen h-auto">
     <!-- HEADER CONTENTS -->
-    <header id="header" class="sticky flex items-center justify-center top-0 z-10 border-b bg-white border-b-gray-200 w-screen h-[59px] transition-all duration-500 ease-in-out">
+    <header id="header" class="sticky flex items-center justify-center top-0 z-10 border-b bg-white border-b-gray-200 w-screen h-[59px]">
       <div class="flex items-center justify-between sm:w-11/12 min-h-[59px]">
         <!-- TOSS-LOGO -->
         <a href="./index.html">
@@ -35,24 +35,26 @@
           </li>
         </ul>
       </div>
-      <!-- HIDDEN CONTENT -->
-      <div id="menu-content" class="hidden w-11/12 h-[190px]">
+    </header> 
+    <!-- HIDDEN CONTENT -->
+    <div id="menu-content" class="hidden bg-white sm1:hidden w-screen h-[190px] border-b border-b-gray-200 animate-openAccordion">
+      <div class="flex items-center mx-auto">
         <ul class="sm1:hidden w-full h-[59px]">
-          <li class="flex items-center justify-center px-2 h-full">
+          <li class="flex items-center justify-center h-full px-2">
             <a class="py-3 px-2.5 w-full text-sm text-gray-500 hover:bg-gray-100 hover:rounded-lg" href="#">디자인</a>
           </li>
-          <li class="flex items-center px-2  h-full">
+          <li class="flex items-center h-full px-2">
             <a class="py-3 px-2.5 w-full text-sm text-gray-500 hover:bg-gray-100 hover:rounded-lg" href="#">개발</a>
           </li>
-          <li class="flex items-center px-2  h-full">
+          <li class="flex items-center h-full px-2">
             <a class="py-[7px] px-3 flex items-center justify-center w-full h-[46px] text-sm whitespace-nowrap bg-[#3182f6] text-white rounded-md hover:bg-[#1957c2] transition-all duration-150" href="#">채용 바로가기</a>
           </li>
         </ul>
       </div>
-    </header> 
+    </div>
     <!-- MAIN CONTENTS -->
     <main class="w-screen h-[2300px] flex-j-center mb-16"> 
-      <section class="w-11/12 h-96 mx-auto">
+      <section class="w-11/12 mx-auto h-96">
         <!-- ARTICLE H1- INTRODUCE -->
         <div class="w-full py-5 my-[18px] h-[76px] text-[28px] font-semibold">
           개발
@@ -110,12 +112,12 @@
     <!-- FOOTER CONTENTS -->
     <footer class="w-screen h-auto">
       <section class="w-screen h-[338px] bg-[#020913] bg-opacity-90 pt-6 pb-[60px] px-6">
-        <div class="w-full h-full flex flex-col justify-between">
+        <div class="flex flex-col justify-between w-full h-full">
           <!-- IMG -->
           <img class="w-[90px] h-[90px]" src="./image/image_footerImg.png.svg" alt="image_footerImg">
           <!-- TEXT -->
           <div class="">
-              <h3 class="text-white font-semibold text-lg">토스팀이 만드는 수많은 혁신의 순간들</h3>
+              <h3 class="text-lg font-semibold text-white">토스팀이 만드는 수많은 혁신의 순간들</h3>
               <p class="mt-2 font-light text-[#e5e8eb]">당신과 함께 만들고 싶습니다. <br>지금, 토스팀에 합류하세요.</p>
               <a class="mt-6 py-[7px] px-3 flex items-center justify-center w-[130px] h-[32px] text-sm whitespace-nowrap bg-[#3182f6] text-white rounded-md hover:bg-[#1957c2] transition-all duration-150" href="#">채용 중인 공고 보기</a>
           </div>
@@ -134,7 +136,7 @@
               <li class="h-[30px] text-[#6b7684] text-[14px]">회사 소개</li>
               <li class="h-[30px] text-[#6b7684] text-[14px]">채용</li>
             </ul>
-            <ul class="text-md pb-10">
+            <ul class="pb-10 text-md">
               <li class="h-[35px] pb-[5px] font-semibold text-[15px]">고객센터</li>
               <li class="h-[30px] text-[#6b7684] text-[14px]">전화: 1599-4905(24시간 연중무휴)</li>
               <li class="h-[30px] text-[#6b7684] text-[14px]">이메일: support@toss.im</li>
@@ -148,7 +150,7 @@
             </ul>
           </address>
           <ul class="w-0 h-[54px]"></ul>
-          <ul class="flex flex-i-center space-x-2">
+          <ul class="flex space-x-2 flex-i-center">
             <li>
               <a target="_blank" href="https://www.facebook.com/toss.revolution">
                 <img src="./image/image_icon-facebook.svg" alt="image_icon-facebook">

@@ -6,11 +6,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   hamburgerMenu.addEventListener('click', () => {
     const ShowMenuContent = !menuContent.classList.contains('hidden');
-    header.style.height = ShowMenuContent ? '59px' : '250px';
     menuIcon.src = ShowMenuContent ? './image/image_hamburger.svg' : './image/image_x.svg';
+    
+    if(!ShowMenuContent) {
+      header.classList.remove('border-b')
+    } else {
+      header.classList.add('border-b');
+    } 
 
     menuContent.classList.toggle('hidden');
-    header.classList.toggle('flex-col');
+
   })
 
 });

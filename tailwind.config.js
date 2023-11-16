@@ -13,6 +13,20 @@ module.exports = {
       colors: {
 
       },
+      keyframes: {
+        openAccordion : { 
+          '0%': { maxHeight: '0' },
+          '100%': { maxHeight: '190px' }
+        },
+        closeAccordion : {
+          '0%': { maxHeight: '190px' },
+          '100%': { maxHeight: '0' }
+        }
+      },
+      animation : {
+        openAccordion : 'openAccordion 0.4s ease-in-out forwards',
+        closeAccordion : 'closeAccordion 0.5s ease-in-out forwards'
+      }
     },
   },
   plugins: [],
